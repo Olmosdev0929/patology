@@ -78,7 +78,7 @@ async def test_full_biopsy_workflow(client, make_user, seeded):
 
     tandem = (await client.get(f"/api/biopsies/{code}/tandem", headers=h)).json()
     names = [s["name"] for s in tandem]
-    assert "GATA3" in names and "E-cadherin" in names
+    assert "GATA3" in names and "p63" in names
     assert "SATB2" not in names  # not clinically paired with a breast receptor panel
     assert tandem[0]["tags"]  # highest-ranked suggestion is expiring and/or slow
 

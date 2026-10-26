@@ -43,7 +43,7 @@ async def seeded(db):
     from app import seed
 
     async with db.SessionLocal() as s:
-        await seed.run(s)
+        await seed.run(s, demo_stock=True)
     return db
 
 
