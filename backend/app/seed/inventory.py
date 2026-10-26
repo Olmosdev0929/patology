@@ -147,6 +147,63 @@ STOCK = {
 }
 
 
+# Antibodies on the laboratory's own shelf (from the rack photo), not yet in MARKERS above.
+# Added without lots or a lab passport: the lab enters lot, expiry, quantity and its own
+# validated protocol in the IGX Ombor screen.
+# name, organ, localization, description uz/ru
+LAB_MARKERS = [
+    ("p16", "cervix", "nuclear/cytoplasmic", ("HPV bilan bog'liq displaziya va karsinoma surrogat markeri.", "Суррогатный маркер ВПЧ-ассоциированной дисплазии и карциномы.")),
+    ("CD138", "lymph", "membranous", ("Plazmotsitlar va plazmotsitar o'smalar.", "Плазматические клетки и плазмоклеточные опухоли.")),
+    ("EMA", "other", "membranous", ("Epitelial membrana antigeni.", "Эпителиальный мембранный антиген.")),
+    ("NSE", "other", "cytoplasmic", ("Neyronga xos enolaza; neyroendokrin differensiatsiya.", "Нейрон-специфическая енолаза; нейроэндокринная дифференцировка.")),
+    ("SALL4", "other", "nuclear", ("Germinogen hujayrali o'smalar markeri.", "Маркер герминогенных опухолей.")),
+    ("CD56", "other", "membranous", ("NCAM; neyroendokrin va NK-hujayralar.", "NCAM; нейроэндокринные и NK-клетки.")),
+    ("CD1a", "lymph", "membranous", ("Langerhans hujayralari va kortikal timotsitlar.", "Клетки Лангерганса и кортикальные тимоциты.")),
+    ("STAT6", "other", "nuclear", ("Solitar fibroz o'sma (NAB2-STAT6).", "Солитарная фиброзная опухоль (NAB2-STAT6).")),
+    ("MyoD1", "other", "nuclear", ("Skelet mushagi differensiatsiyasi (rabdomiosarkoma).", "Скелетно-мышечная дифференцировка (рабдомиосаркома).")),
+    ("CD15", "lymph", "membranous/Golgi", ("Reed-Sternberg hujayralari, granulotsitlar.", "Клетки Рида-Штернберга, гранулоциты.")),
+    ("OCT3/4", "other", "nuclear", ("Seminoma va embrional karsinoma.", "Семинома и эмбриональная карцинома.")),
+    ("CD34", "other", "membranous", ("Endoteliy, gemopoetik o'tmishdoshlar, ayrim mezenximal o'smalar.", "Эндотелий, гемопоэтические предшественники, ряд мезенхимальных опухолей.")),
+    ("TdT", "lymph", "nuclear", ("Limfoblastlar (limfoblast limfoma/leykoz).", "Лимфобласты (лимфобластная лимфома/лейкоз).")),
+    ("CD10", "other", "membranous", ("Germinal markaz B-hujayralari, endometrial stroma, buyrak.", "B-клетки герминативного центра, эндометриальная строма, почка.")),
+    ("NeuN", "other", "nuclear", ("Neyronlar yadrosi.", "Ядра нейронов.")),
+    ("S100P", "other", "nuclear/cytoplasmic", ("Pankreatobiliar va urotelial karsinomalar.", "Панкреатобилиарные и уротелиальные карциномы.")),
+    ("CD45 (LCA)", "lymph", "membranous", ("Umumiy leykotsitar antigen.", "Общий лейкоцитарный антиген.")),
+    ("HMB45", "skin", "cytoplasmic", ("Melanotsitar differensiatsiya, PEComa.", "Меланоцитарная дифференцировка, PEComa.")),
+    ("PTEN", "other", "nuclear/cytoplasmic", ("O'sma supressori; yo'qolishi baholanadi.", "Опухолевый супрессор; оценивается утрата.")),
+    ("CD68", "lymph", "cytoplasmic", ("Makrofaglar va gistiotsitlar.", "Макрофаги и гистиоциты.")),
+    ("INI1", "other", "nuclear", ("SMARCB1; yo'qolishi rabdoid o'smalarda.", "SMARCB1; утрата при рабдоидных опухолях.")),
+    ("Calretinin", "other", "nuclear/cytoplasmic", ("Mezotelial differensiatsiya.", "Мезотелиальная дифференцировка.")),
+    ("CD99", "other", "membranous", ("Ewing sarkomasi va boshqa mayda dumaloq hujayrali o'smalar.", "Саркома Юинга и другие мелкокруглоклеточные опухоли.")),
+    ("SOX11", "lymph", "nuclear", ("Mantiya hujayrali limfoma.", "Лимфома из клеток мантии.")),
+    ("p53", "other", "nuclear", ("TP53 mutatsiyasi surrogati (yovvoyi / aberrant tip).", "Суррогат мутации TP53 (дикий / аберрантный тип).")),
+    ("PSA", "prostate", "cytoplasmic", ("Prostata kelib chiqishi.", "Простатическое происхождение.")),
+    ("BRAF V600E", "other", "cytoplasmic", ("BRAF V600E mutant oqsili.", "Мутантный белок BRAF V600E.")),
+    ("Vimentin", "other", "cytoplasmic", ("Mezenximal oraliq filament.", "Мезенхимальный промежуточный филамент.")),
+    ("CD5", "lymph", "membranous", ("T-hujayralar; KLL/MKL va mantiya limfomasi.", "T-клетки; ХЛЛ/МЛЛ и лимфома из клеток мантии.")),
+    ("YAP1", "other", "nuclear", ("Medulloblastoma molekulyar guruhlari (GAB1 bilan).", "Молекулярные группы медуллобластомы (вместе с GAB1).")),
+    ("GAB1", "other", "cytoplasmic", ("SHH-medulloblastoma (YAP1 bilan).", "SHH-медуллобластома (вместе с YAP1).")),
+    ("ALK", "lung", "cytoplasmic", ("ALK qayta joylashuvi: o'pka adenokarsinomasi, ALCL, IMT.", "Перестройка ALK: аденокарцинома лёгкого, ALCL, ВМО.")),
+    ("GFAP", "other", "cytoplasmic", ("Glial differensiatsiya.", "Глиальная дифференцировка.")),
+    ("CD79a", "lymph", "membranous/cytoplasmic", ("B-hujayra va plazmotsitlar.", "B-клетки и плазматические клетки.")),
+    ("SMA", "other", "cytoplasmic", ("Silliq mushak aktini.", "Гладкомышечный актин.")),
+    ("WT1", "other", "nuclear", ("Mezoteliy, seroz karsinoma, Wilms o'smasi.", "Мезотелий, серозная карцинома, опухоль Вильмса.")),
+    ("PanCK", "other", "cytoplasmic", ("Keng spektrli sitokeratin (AE1/AE3); epitelial kelib chiqish.", "Панцитокератин (AE1/AE3); эпителиальное происхождение.")),
+    ("Cyclin D1", "lymph", "nuclear", ("Mantiya hujayrali limfoma, ayrim karsinomalar.", "Лимфома из клеток мантии, ряд карцином.")),
+    ("Olig2", "other", "nuclear", ("Glial o'smalar (oligodendroglioma, astrotsitoma).", "Глиальные опухоли (олигодендроглиома, астроцитома).")),
+    ("CD31", "other", "membranous", ("Endotelial marker; tomir o'smalari.", "Эндотелиальный маркер; сосудистые опухоли.")),
+    ("PLAP", "other", "membranous/cytoplasmic", ("Germinogen hujayrali o'smalar.", "Герминогенные опухоли.")),
+    ("Bcl-2", "lymph", "cytoplasmic", ("Follikulyar limfomani reaktiv follikuldan farqlash.", "Отличие фолликулярной лимфомы от реактивного фолликула.")),
+    ("ATRX", "other", "nuclear", ("Diffuz gliomalarda yo'qolishi baholanadi.", "Оценка утраты при диффузных глиомах.")),
+    ("Desmin", "other", "cytoplasmic", ("Mushak differensiatsiyasi.", "Мышечная дифференцировка.")),
+    ("Bcl-6", "lymph", "nuclear", ("Germinal markaz B-hujayralari.", "B-клетки герминативного центра.")),
+    ("AMACR (P504S)", "prostate", "cytoplasmic", ("Prostata adenokarsinomasi (p63 bilan).", "Аденокарцинома простаты (вместе с p63).")),
+    ("IDH1 R132H", "other", "cytoplasmic", ("IDH1 R132H mutant oqsili (gliomalar).", "Мутантный белок IDH1 R132H (глиомы).")),
+    ("PD-L1", "lung", "membranous", ("Immunoterapiyaga tanlov (TPS/CPS).", "Отбор на иммунотерапию (TPS/CPS).")),
+    ("H3K27me3", "other", "nuclear", ("Yo'qolishi: MPNST, diffuz o'rta chiziq gliomasi.", "Утрата: MPNST, диффузная глиома средней линии.")),
+]
+
+
 def build(today: date | None = None):
     """Return (markers, lots_by_marker, usage_by_marker) ready to insert."""
     today = today or date.today()
@@ -160,6 +217,9 @@ def build(today: date | None = None):
                           "incubation_min": inc, "control_tissue": ctrl,
                           "notes": "Example protocol — validate locally before clinical use."},
         ))
+    for name, organ, loc, (d_uz, d_ru) in LAB_MARKERS:
+        markers.append(dict(name=name, organ=organ, localization=loc, description={"uz": d_uz, "ru": d_ru},
+                            tandem_with=[], reason={"uz": "", "ru": ""}, lab_passport={}))
     lots = {n: [(lot, today + timedelta(days=d), q) for lot, d, q in spec[0]] for n, spec in STOCK.items()}
     now = datetime.now(timezone.utc)
     # Spread each marker's past tests evenly over the window (offset by half a step so none land "now").
