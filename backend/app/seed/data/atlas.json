@@ -1,0 +1,1450 @@
+{
+ "organs": [
+  {
+   "slug": "breast",
+   "name": {
+    "uz": "Ko'krak bezi",
+    "ru": "Молочная железа"
+   },
+   "name_en": "Breast",
+   "icon": "🎀"
+  },
+  {
+   "slug": "lung",
+   "name": {
+    "uz": "O'pka",
+    "ru": "Лёгкое"
+   },
+   "name_en": "Lung",
+   "icon": "🫁"
+  },
+  {
+   "slug": "colon",
+   "name": {
+    "uz": "Yo'g'on ichak",
+    "ru": "Толстая кишка"
+   },
+   "name_en": "Colon",
+   "icon": "🌀"
+  },
+  {
+   "slug": "stomach",
+   "name": {
+    "uz": "Oshqozon va GIST",
+    "ru": "Желудок и GIST"
+   },
+   "name_en": "Stomach",
+   "icon": "🫃"
+  },
+  {
+   "slug": "liver",
+   "name": {
+    "uz": "Jigar",
+    "ru": "Печень"
+   },
+   "name_en": "Liver",
+   "icon": "🟤"
+  },
+  {
+   "slug": "kidney",
+   "name": {
+    "uz": "Buyrak",
+    "ru": "Почка"
+   },
+   "name_en": "Kidney",
+   "icon": "🫘"
+  },
+  {
+   "slug": "prostate",
+   "name": {
+    "uz": "Prostata",
+    "ru": "Предстательная железа"
+   },
+   "name_en": "Prostate",
+   "icon": "🔵"
+  },
+  {
+   "slug": "thyroid",
+   "name": {
+    "uz": "Qalqonsimon bez",
+    "ru": "Щитовидная железа"
+   },
+   "name_en": "Thyroid",
+   "icon": "🦋"
+  },
+  {
+   "slug": "skin",
+   "name": {
+    "uz": "Teri",
+    "ru": "Кожа"
+   },
+   "name_en": "Skin",
+   "icon": "🖐"
+  },
+  {
+   "slug": "lymph",
+   "name": {
+    "uz": "Limfa tugunlari",
+    "ru": "Лимфатические узлы"
+   },
+   "name_en": "Lymph nodes",
+   "icon": "🧬"
+  },
+  {
+   "slug": "cervix",
+   "name": {
+    "uz": "Bachadon bo'yni",
+    "ru": "Шейка матки"
+   },
+   "name_en": "Cervix",
+   "icon": "🌸"
+  }
+ ],
+ "diseases": [
+  {
+   "slug": "breast-idc",
+   "organ": "breast",
+   "name": {
+    "uz": "Invaziv karsinoma, maxsus turga mansub bo'lmagan (NST)",
+    "ru": "Инвазивная карцинома неспецифического типа (NST)"
+   },
+   "name_en": "Invasive breast carcinoma of no special type",
+   "icd10": "C50",
+   "sections": {
+    "definition": {
+     "uz": "Ko'krak bezining eng ko'p uchraydigan invaziv karsinomasi; boshqa maxsus gistologik turlarga to'g'ri kelmaydigan o'smalar shu guruhga kiradi (ilgari \"invaziv duktal karsinoma\").",
+     "ru": "Наиболее частая инвазивная карцинома молочной железы; включает опухоли, не соответствующие критериям специальных гистологических типов (ранее «инвазивная протоковая карцинома»)."
+    },
+    "epidemiology": {
+     "uz": "Ko'krak bezi invaziv karsinomalarining taxminan 70–80% ini tashkil qiladi. Asosan 40 yoshdan katta ayollarda uchraydi.",
+     "ru": "Составляет около 70–80% инвазивных карцином молочной железы. Встречается преимущественно у женщин старше 40 лет."
+    },
+    "clinical": {
+     "uz": "Paypaslanadigan zich tugun, mammografiyada spikulali soya yoki mikrokalsinatlar; teri tortilishi, so'rg'ich ichkariga tortilishi bo'lishi mumkin.",
+     "ru": "Пальпируемый плотный узел, на маммограмме — спикулообразная тень или микрокальцинаты; возможны втяжение кожи и соска."
+    },
+    "gross": {
+     "uz": "Qattiq, kulrang-oq, chegarasi notekis (yulduzsimon) tugun; kesilganda \"g'ichirlaydi\".",
+     "ru": "Плотный серо-белый узел с нечёткими (звездчатыми) краями; при разрезе «хрустит»."
+    },
+    "microscopic": {
+     "uz": "O'sma hujayralari uyalar, tortmalar, bezsimon tuzilmalar ko'rinishida desmoplastik stromaga infiltratsiya qiladi. Daraja Nottingem tizimi bo'yicha baholanadi: naychalar hosil bo'lishi, yadro pleomorfizmi va mitozlar soni.",
+     "ru": "Опухолевые клетки инфильтрируют десмопластическую строму в виде гнёзд, тяжей и железистых структур. Степень злокачественности оценивается по Ноттингемской системе: образование тубулярных структур, ядерный плеоморфизм и число митозов."
+    },
+    "ihc": {
+     "uz": "Prognostik va prediktiv omillar sifatida ER, PR, HER2 va Ki-67 majburiy baholanadi. Molekulyar surrogat turlar: luminal A, luminal B, HER2-boyitilgan, uch karra manfiy.",
+     "ru": "Как прогностические и предиктивные факторы обязательно оцениваются ER, PR, HER2 и Ki-67. Суррогатные молекулярные подтипы: люминальный A, люминальный B, HER2-обогащённый, тройной негативный."
+    },
+    "differential": {
+     "uz": "Invaziv lobulyar karsinoma (E-kadherin manfiy), sklerozlovchi adenoz va radial chandiq (mioepitelial qavat saqlangan), metastatik karsinoma.",
+     "ru": "Инвазивная дольковая карцинома (E-кадгерин негативна), склерозирующий аденоз и радиальный рубец (миоэпителиальный слой сохранён), метастатическая карцинома."
+    },
+    "prognosis": {
+     "uz": "O'sma o'lchami, limfa tugunlari holati, daraja va retseptor holatiga bog'liq. Erta bosqichda davolash natijalari yaxshi.",
+     "ru": "Зависит от размера опухоли, статуса лимфоузлов, степени злокачественности и рецепторного статуса. На ранних стадиях результаты лечения хорошие."
+    }
+   },
+   "markers": [
+    {
+     "name": "ER",
+     "result": {
+      "uz": "+ (ko'pchiligi)",
+      "ru": "+ (большинство)"
+     }
+    },
+    {
+     "name": "PR",
+     "result": {
+      "uz": "+/−",
+      "ru": "+/−"
+     }
+    },
+    {
+     "name": "HER2",
+     "result": {
+      "uz": "+ (~15–20%)",
+      "ru": "+ (~15–20%)"
+     }
+    },
+    {
+     "name": "GATA3",
+     "result": {
+      "uz": "+",
+      "ru": "+"
+     }
+    },
+    {
+     "name": "E-kadherin",
+     "result": {
+      "uz": "+",
+      "ru": "+"
+     }
+    },
+    {
+     "name": "CK7",
+     "result": {
+      "uz": "+",
+      "ru": "+"
+     }
+    },
+    {
+     "name": "Ki-67",
+     "result": {
+      "uz": "o'zgaruvchan",
+      "ru": "вариабельно"
+     }
+    }
+   ],
+   "refs": "WHO Classification of Tumours, 5-nashr: Breast Tumours (2019)"
+  },
+  {
+   "slug": "breast-ilc",
+   "organ": "breast",
+   "name": {
+    "uz": "Invaziv lobulyar karsinoma",
+    "ru": "Инвазивная дольковая карцинома"
+   },
+   "name_en": "Invasive lobular carcinoma",
+   "icd10": "C50",
+   "sections": {
+    "definition": {
+     "uz": "Bir-biriga yopishmaydigan (diskogeziv) hujayralardan iborat invaziv karsinoma; asosan E-kadherin yo'qolishi bilan bog'liq.",
+     "ru": "Инвазивная карцинома из дискогезивных (несцепленных) клеток, обычно связанная с утратой E-кадгерина."
+    },
+    "epidemiology": {
+     "uz": "Invaziv ko'krak bezi karsinomalarining taxminan 5–15% i. Ko'pincha ikki tomonlama va multifokal.",
+     "ru": "Около 5–15% инвазивных карцином молочной железы. Часто двусторонняя и мультифокальная."
+    },
+    "clinical": {
+     "uz": "Tugun aniq bo'lmasligi mumkin; mammografiyada ko'rinmay qolishi tez-tez uchraydi.",
+     "ru": "Узел может быть нечётким; часто не выявляется на маммографии."
+    },
+    "gross": {
+     "uz": "Chegarasi noaniq qattiqlik; ba'zan makroskopik o'sma aniqlanmaydi.",
+     "ru": "Уплотнение с нечёткими границами; иногда макроскопически опухоль не определяется."
+    },
+    "microscopic": {
+     "uz": "Mayda, bir xil hujayralar bitta qator bo'lib (\"hind qatori\") yoki yakka holda stroma bo'ylab tarqaladi, duktuslar atrofida konsentrik (\"nishonsimon\") joylashadi. Hujayra ichidagi shilliq vakuollar (signet-ring) uchraydi.",
+     "ru": "Мелкие мономорфные клетки располагаются цепочками в один ряд («индейская цепочка») или поодиночке в строме, концентрически вокруг протоков («мишеневидно»). Встречаются внутриклеточные слизистые вакуоли (перстневидные клетки)."
+    },
+    "ihc": {
+     "uz": "E-kadherin manfiy (yoki aberrant), p120 sitoplazmatik. Klassik turda ER+, HER2 odatda manfiy.",
+     "ru": "E-кадгерин негативен (или аберрантен), p120 цитоплазматический. При классическом типе ER+, HER2 обычно негативен."
+    },
+    "differential": {
+     "uz": "NST karsinomasi, limfoma, metastatik oshqozon signet-ring karsinomasi (ER manfiy, CDX2 ±).",
+     "ru": "Карцинома NST, лимфома, метастаз перстневидноклеточного рака желудка (ER негативен, CDX2 ±)."
+    },
+    "prognosis": {
+     "uz": "Klassik turda NST ga o'xshash yoki biroz yaxshiroq; pleomorf variant agressivroq. Oshqozon-ichak, qorin pardasi va suyakka xos metastaz beradi.",
+     "ru": "Классический тип сходен с NST или несколько лучше; плеоморфный вариант агрессивнее. Характерны метастазы в ЖКТ, брюшину и кости."
+    }
+   },
+   "markers": [
+    {
+     "name": "E-kadherin",
+     "result": {
+      "uz": "−",
+      "ru": "−"
+     }
+    },
+    {
+     "name": "ER",
+     "result": {
+      "uz": "+",
+      "ru": "+"
+     }
+    },
+    {
+     "name": "PR",
+     "result": {
+      "uz": "+/−",
+      "ru": "+/−"
+     }
+    },
+    {
+     "name": "HER2",
+     "result": {
+      "uz": "− (klassik turda)",
+      "ru": "− (классический тип)"
+     }
+    },
+    {
+     "name": "GATA3",
+     "result": {
+      "uz": "+",
+      "ru": "+"
+     }
+    }
+   ],
+   "refs": "WHO Classification of Tumours, 5-nashr: Breast Tumours (2019)"
+  },
+  {
+   "slug": "breast-fibroadenoma",
+   "organ": "breast",
+   "name": {
+    "uz": "Fibroadenoma",
+    "ru": "Фиброаденома"
+   },
+   "name_en": "Fibroadenoma",
+   "icd10": "D24",
+   "sections": {
+    "definition": {
+     "uz": "Ko'krak bezining epitelial va stromal komponentlardan iborat xavfsiz fibroepitelial o'smasi.",
+     "ru": "Доброкачественная фиброэпителиальная опухоль молочной железы из эпителиального и стромального компонентов."
+    },
+    "epidemiology": {
+     "uz": "Yosh ayollarda (20–30 yosh) eng ko'p uchraydigan ko'krak bezi o'smasi.",
+     "ru": "Наиболее частая опухоль молочной железы у молодых женщин (20–30 лет)."
+    },
+    "clinical": {
+     "uz": "Harakatchan, og'riqsiz, silliq yuzali tugun.",
+     "ru": "Подвижный, безболезненный узел с гладкой поверхностью."
+    },
+    "gross": {
+     "uz": "Chegarasi aniq, oval, kesilganda kulrang-oq, bo'lakli tugun.",
+     "ru": "Чётко отграниченный овальный узел, на разрезе серо-белый, дольчатый."
+    },
+    "microscopic": {
+     "uz": "Stroma va bezsimon tuzilmalarning bir tekis proliferatsiyasi: perikanalikulyar va intrakanalikulyar o'sish turi. Bezlarda epitelial va mioepitelial qavatlar saqlangan; stroma hujayrasi kam, atipiya va mitozlar yo'q.",
+     "ru": "Равномерная пролиферация стромы и железистых структур: периканаликулярный и интраканаликулярный типы роста. В железах сохранены эпителиальный и миоэпителиальный слои; строма малоклеточная, без атипии и митозов."
+    },
+    "ihc": {
+     "uz": "Diagnoz morfologik. Mioepitelial qavat p63 bilan ko'rinadi.",
+     "ru": "Диагноз морфологический. Миоэпителиальный слой выявляется p63."
+    },
+    "differential": {
+     "uz": "Filloid o'sma (stroma hujayraligi yuqori, bargsimon tuzilma, mitozlar), tubulyar adenoma, gamartoma.",
+     "ru": "Филлоидная опухоль (высокая клеточность стромы, листовидная структура, митозы), тубулярная аденома, гамартома."
+    },
+    "prognosis": {
+     "uz": "Xavfsiz; olib tashlangandan keyin qaytalanishi kam.",
+     "ru": "Доброкачественная; после удаления рецидивирует редко."
+    }
+   },
+   "markers": [
+    {
+     "name": "p63",
+     "result": {
+      "uz": "+ (mioepiteliy)",
+      "ru": "+ (миоэпителий)"
+     }
+    }
+   ],
+   "refs": "WHO Classification of Tumours, 5-nashr: Breast Tumours (2019)"
+  },
+  {
+   "slug": "lung-adenocarcinoma",
+   "organ": "lung",
+   "name": {
+    "uz": "O'pka adenokarsinomasi",
+    "ru": "Аденокарцинома лёгкого"
+   },
+   "name_en": "Lung adenocarcinoma",
+   "icd10": "C34",
+   "sections": {
+    "definition": {
+     "uz": "Bezsimon differensiatsiya, shilliq hosil qilish yoki pnevmotsit markerlari ifodasi bilan tavsiflanadigan o'pkaning xavfli epitelial o'smasi.",
+     "ru": "Злокачественная эпителиальная опухоль лёгкого с железистой дифференцировкой, продукцией слизи или экспрессией маркеров пневмоцитов."
+    },
+    "epidemiology": {
+     "uz": "O'pka saratonining eng ko'p uchraydigan turi; chekmaydiganlar va ayollar orasida ham asosiy tur.",
+     "ru": "Наиболее частый тип рака лёгкого; основной тип также у некурящих и женщин."
+    },
+    "clinical": {
+     "uz": "Odatda periferik joylashgan; yo'tal, qon tupurish, vazn yo'qotish. Ko'pincha tasodifan KT da aniqlanadi.",
+     "ru": "Обычно периферическая; кашель, кровохарканье, потеря веса. Часто выявляется случайно при КТ."
+    },
+    "gross": {
+     "uz": "Periferik, kulrang-oq tugun, ko'pincha plevra tortilishi bilan; markazda chandiq bo'lishi mumkin.",
+     "ru": "Периферический серо-белый узел, нередко с втяжением плевры; в центре возможен рубец."
+    },
+    "microscopic": {
+     "uz": "O'sish naqshlari: lepidik, atsinar, papillyar, mikropapillyar va solid. Invaziv o'smalarda ustun naqsh va yuqori darajali komponent ulushi asosida daraja beriladi.",
+     "ru": "Паттерны роста: лепидический, ацинарный, папиллярный, микропапиллярный и солидный. Степень инвазивных опухолей определяется по преобладающему паттерну и доле компонента высокой степени."
+    },
+    "ihc": {
+     "uz": "TTF-1 va Napsin A musbat, CK7+, CK20−, p40−. Barcha bosqichdagi nesquamoz karsinomalarda maqsadli terapiya uchun molekulyar test (EGFR, ALK, ROS1, BRAF, KRAS, PD-L1 va boshqalar) tavsiya qilinadi.",
+     "ru": "TTF-1 и Napsin A позитивны, CK7+, CK20−, p40−. При неплоскоклеточном раке любой стадии рекомендовано молекулярное тестирование для таргетной терапии (EGFR, ALK, ROS1, BRAF, KRAS, PD-L1 и др.)."
+    },
+    "differential": {
+     "uz": "Yassi hujayrali karsinoma (p40+), metastatik adenokarsinoma (ko'krak bezi — GATA3; ichak — CDX2/CK20), mezotelioma (kalretinin, WT1).",
+     "ru": "Плоскоклеточный рак (p40+), метастатическая аденокарцинома (молочная железа — GATA3; кишечник — CDX2/CK20), мезотелиома (калретинин, WT1)."
+    },
+    "prognosis": {
+     "uz": "Bosqichga va molekulyar o'zgarishlarga bog'liq. Lepidik ustun o'smalar yaxshi, mikropapillyar va solid naqshlar yomon prognozli.",
+     "ru": "Зависит от стадии и молекулярных изменений. Опухоли с преобладанием лепидического роста — благоприятный прогноз, микропапиллярный и солидный паттерны — неблагоприятный."
+    }
+   },
+   "markers": [
+    {
+     "name": "TTF-1",
+     "result": {
+      "uz": "+",
+      "ru": "+"
+     }
+    },
+    {
+     "name": "Napsin A",
+     "result": {
+      "uz": "+",
+      "ru": "+"
+     }
+    },
+    {
+     "name": "CK7",
+     "result": {
+      "uz": "+",
+      "ru": "+"
+     }
+    },
+    {
+     "name": "CK20",
+     "result": {
+      "uz": "−",
+      "ru": "−"
+     }
+    },
+    {
+     "name": "p40",
+     "result": {
+      "uz": "−",
+      "ru": "−"
+     }
+    },
+    {
+     "name": "EGFR",
+     "result": {
+      "uz": "mutatsiya (bir qismida)",
+      "ru": "мутация (в части случаев)"
+     }
+    },
+    {
+     "name": "ALK",
+     "result": {
+      "uz": "qayta tuzilish (~3–5%)",
+      "ru": "перестройка (~3–5%)"
+     }
+    },
+    {
+     "name": "KRAS",
+     "result": {
+      "uz": "mutatsiya (bir qismida)",
+      "ru": "мутация (в части случаев)"
+     }
+    }
+   ],
+   "refs": "WHO Classification of Tumours, 5-nashr: Thoracic Tumours (2021)"
+  },
+  {
+   "slug": "lung-scc",
+   "organ": "lung",
+   "name": {
+    "uz": "O'pkaning yassi hujayrali karsinomasi",
+    "ru": "Плоскоклеточный рак лёгкого"
+   },
+   "name_en": "Squamous cell carcinoma of lung",
+   "icd10": "C34",
+   "sections": {
+    "definition": {
+     "uz": "Keratinlanish va/yoki hujayralararo ko'priklar yoki yassi hujayrali markerlar ifodasi bilan tavsiflanadigan xavfli epitelial o'sma.",
+     "ru": "Злокачественная эпителиальная опухоль с ороговением и/или межклеточными мостиками либо экспрессией плоскоклеточных маркеров."
+    },
+    "epidemiology": {
+     "uz": "Chekish bilan kuchli bog'liq; asosan katta yoshdagi erkaklarda.",
+     "ru": "Тесно связан с курением; преимущественно у пожилых мужчин."
+    },
+    "clinical": {
+     "uz": "Ko'pincha markaziy joylashgan; bronx obstruksiyasi, obstruktiv pnevmoniya, qon tupurish.",
+     "ru": "Чаще центральный; обструкция бронха, обструктивная пневмония, кровохарканье."
+    },
+    "gross": {
+     "uz": "Markaziy bronx bilan bog'liq kulrang-oq o'sma; markazda kavitatsiya bo'lishi mumkin.",
+     "ru": "Серо-белая опухоль, связанная с центральным бронхом; возможна кавитация в центре."
+    },
+    "microscopic": {
+     "uz": "Ko'p qavatli yassi hujayralar uyalari, keratin \"marvaridlari\", hujayralararo ko'priklar. Past differensiallashgan turda keratinlanish bo'lmaydi — IHC zarur.",
+     "ru": "Гнёзда многослойного плоского эпителия, роговые «жемчужины», межклеточные мостики. При низкодифференцированном типе ороговения нет — необходима ИГХ."
+    },
+    "ihc": {
+     "uz": "p40+, CK5/6+, p63+; TTF-1 va Napsin A manfiy.",
+     "ru": "p40+, CK5/6+, p63+; TTF-1 и Napsin A негативны."
+    },
+    "differential": {
+     "uz": "Past differensiallashgan adenokarsinoma, metastatik yassi hujayrali karsinoma (bosh-bo'yin, bachadon bo'yni — p16/HPV), NUT karsinoma.",
+     "ru": "Низкодифференцированная аденокарцинома, метастаз плоскоклеточного рака (голова и шея, шейка матки — p16/HPV), NUT-карцинома."
+    },
+    "prognosis": {
+     "uz": "Bosqichga bog'liq; maqsadli mutatsiyalar kam, immunoterapiya imkoniyati PD-L1 asosida baholanadi.",
+     "ru": "Зависит от стадии; таргетные мутации редки, возможность иммунотерапии оценивается по PD-L1."
+    }
+   },
+   "markers": [
+    {
+     "name": "p40",
+     "result": {
+      "uz": "+",
+      "ru": "+"
+     }
+    },
+    {
+     "name": "CK5/6",
+     "result": {
+      "uz": "+",
+      "ru": "+"
+     }
+    },
+    {
+     "name": "p63",
+     "result": {
+      "uz": "+",
+      "ru": "+"
+     }
+    },
+    {
+     "name": "TTF-1",
+     "result": {
+      "uz": "−",
+      "ru": "−"
+     }
+    },
+    {
+     "name": "Napsin A",
+     "result": {
+      "uz": "−",
+      "ru": "−"
+     }
+    }
+   ],
+   "refs": "WHO Classification of Tumours, 5-nashr: Thoracic Tumours (2021)"
+  },
+  {
+   "slug": "lung-sclc",
+   "organ": "lung",
+   "name": {
+    "uz": "Mayda hujayrali karsinoma",
+    "ru": "Мелкоклеточный рак"
+   },
+   "name_en": "Small cell carcinoma",
+   "icd10": "C34",
+   "sections": {
+    "definition": {
+     "uz": "Yuqori darajali neyroendokrin karsinoma; mayda hujayralar, kam sitoplazma va \"tuzlangan qalampir\" xromatin bilan tavsiflanadi.",
+     "ru": "Нейроэндокринная карцинома высокой степени злокачественности: мелкие клетки, скудная цитоплазма, хроматин по типу «соли с перцем»."
+    },
+    "epidemiology": {
+     "uz": "O'pka saratonining taxminan 10–15% i; deyarli faqat chekuvchilarda.",
+     "ru": "Около 10–15% рака лёгкого; почти исключительно у курильщиков."
+    },
+    "clinical": {
+     "uz": "Markaziy o'sma, erta metastaz (miya, jigar, suyak). Paraneoplastik sindromlar: SIADH, Kushing, Lambert–Iton.",
+     "ru": "Центральная опухоль, раннее метастазирование (мозг, печень, кости). Паранеопластические синдромы: SIADH, Кушинга, Ламберта–Итона."
+    },
+    "gross": {
+     "uz": "Markaziy, yumshoq, oq-kulrang o'sma, keng nekroz bilan.",
+     "ru": "Центральная мягкая бело-серая опухоль с обширным некрозом."
+    },
+    "microscopic": {
+     "uz": "Limfotsitdan ~3 baravar katta hujayralar, yadro moldingi (bir-biriga \"qoliplanishi\"), mayda donador xromatin, ko'zga ko'rinmas yadrocha, ko'p mitoz va nekroz. Ezilish artefakti (crush) tipik.",
+     "ru": "Клетки примерно в 3 раза крупнее лимфоцита, ядерный молдинг, мелкозернистый хроматин, незаметные ядрышки, много митозов и некроза. Типичен артефакт раздавливания (crush)."
+    },
+    "ihc": {
+     "uz": "Neyroendokrin markerlar (INSM1, sinaptofizin, xromogranin) musbat, TTF-1 ko'pincha +, Ki-67 juda yuqori (odatda >50–80%). Keratin nuqtali.",
+     "ru": "Нейроэндокринные маркеры (INSM1, синаптофизин, хромогранин) позитивны, TTF-1 часто +, Ki-67 очень высокий (обычно >50–80%). Кератин точечно."
+    },
+    "differential": {
+     "uz": "Limfoma (CD45+, keratin −), bazaloid yassi hujayrali karsinoma (p40+), tipik/atipik karsinoid (Ki-67 past), Ewing sarkomasi.",
+     "ru": "Лимфома (CD45+, кератин −), базалоидный плоскоклеточный рак (p40+), типичный/атипичный карциноид (низкий Ki-67), саркома Юинга."
+    },
+    "prognosis": {
+     "uz": "Yomon; ko'pchilik bemorlarda tashxis paytida keng tarqalgan kasallik.",
+     "ru": "Неблагоприятный; у большинства пациентов на момент диагноза распространённая болезнь."
+    }
+   },
+   "markers": [
+    {
+     "name": "INSM1",
+     "result": {
+      "uz": "+",
+      "ru": "+"
+     }
+    },
+    {
+     "name": "Sinaptofizin",
+     "result": {
+      "uz": "+",
+      "ru": "+"
+     }
+    },
+    {
+     "name": "Xromogranin A",
+     "result": {
+      "uz": "+/− (kuchsiz)",
+      "ru": "+/− (слабо)"
+     }
+    },
+    {
+     "name": "TTF-1",
+     "result": {
+      "uz": "+ (ko'pchiligi)",
+      "ru": "+ (большинство)"
+     }
+    },
+    {
+     "name": "Ki-67",
+     "result": {
+      "uz": "juda yuqori",
+      "ru": "очень высокий"
+     }
+    }
+   ],
+   "refs": "WHO Classification of Tumours, 5-nashr: Thoracic Tumours (2021)"
+  },
+  {
+   "slug": "colon-adenocarcinoma",
+   "organ": "colon",
+   "name": {
+    "uz": "Kolorektal adenokarsinoma",
+    "ru": "Колоректальная аденокарцинома"
+   },
+   "name_en": "Colorectal adenocarcinoma",
+   "icd10": "C18–C20",
+   "sections": {
+    "definition": {
+     "uz": "Yo'g'on ichak shilliq qavatidan kelib chiqib, kamida submukozaga invaziya qilgan xavfli bezsimon o'sma.",
+     "ru": "Злокачественная железистая опухоль слизистой толстой кишки, инвазирующая как минимум подслизистый слой."
+    },
+    "epidemiology": {
+     "uz": "Dunyoda eng ko'p uchraydigan saratonlardan biri. Ko'pchiligi adenoma-karsinoma ketma-ketligi orqali rivojlanadi.",
+     "ru": "Один из самых частых видов рака в мире. Большинство развивается по последовательности аденома–карцинома."
+    },
+    "clinical": {
+     "uz": "O'ng tomonda — anemiya, holsizlik; chap tomonda — ich kelishining o'zgarishi, qon aralash najas, obstruksiya.",
+     "ru": "Справа — анемия, слабость; слева — изменение стула, кровь в кале, обструкция."
+    },
+    "gross": {
+     "uz": "Ekzofit polipoid yoki yarali, chetlari ko'tarilgan o'sma; chap tomonda halqasimon (\"salfetka halqasi\") torayish.",
+     "ru": "Экзофитная полиповидная или изъязвлённая опухоль с валикообразными краями; слева — циркулярное сужение («салфеточное кольцо»)."
+    },
+    "microscopic": {
+     "uz": "Turli darajada differensiallashgan bezlar, \"iflos nekroz\" (dirty necrosis), desmoplastik stroma. Shilliq (müsinoz) va signet-ring variantlari mavjud.",
+     "ru": "Железы различной степени дифференцировки, «грязный некроз» (dirty necrosis), десмопластическая строма. Существуют муцинозный и перстневидноклеточный варианты."
+    },
+    "ihc": {
+     "uz": "CK20+, CDX2+, SATB2+, CK7−. Barcha holatlarda MMR/MSI tekshiruvi tavsiya etiladi; metastatik kasallikda RAS va BRAF holati aniqlanadi.",
+     "ru": "CK20+, CDX2+, SATB2+, CK7−. Во всех случаях рекомендовано исследование MMR/MSI; при метастатической болезни определяют статус RAS и BRAF."
+    },
+    "differential": {
+     "uz": "Psevdoinvaziya bilan adenoma, metastatik adenokarsinoma (o'pka, endometriy), appendiks yoki oshqozon kelib chiqishi.",
+     "ru": "Аденома с псевдоинвазией, метастатическая аденокарцинома (лёгкое, эндометрий), аппендикулярное или желудочное происхождение."
+    },
+    "prognosis": {
+     "uz": "Asosan bosqichga (TNM) bog'liq. MSI-yuqori o'smalar odatda yaxshiroq prognozli va immunoterapiyaga sezgir.",
+     "ru": "Определяется в основном стадией (TNM). Опухоли с MSI-H обычно имеют лучший прогноз и чувствительны к иммунотерапии."
+    }
+   },
+   "markers": [
+    {
+     "name": "CK20",
+     "result": {
+      "uz": "+",
+      "ru": "+"
+     }
+    },
+    {
+     "name": "CDX2",
+     "result": {
+      "uz": "+",
+      "ru": "+"
+     }
+    },
+    {
+     "name": "SATB2",
+     "result": {
+      "uz": "+",
+      "ru": "+"
+     }
+    },
+    {
+     "name": "CK7",
+     "result": {
+      "uz": "−",
+      "ru": "−"
+     }
+    },
+    {
+     "name": "MMR oqsillari",
+     "result": {
+      "uz": "yo'qolishi mumkin (~15%)",
+      "ru": "возможна утрата (~15%)"
+     }
+    },
+    {
+     "name": "KRAS",
+     "result": {
+      "uz": "mutatsiya (~40%)",
+      "ru": "мутация (~40%)"
+     }
+    },
+    {
+     "name": "BRAF V600E",
+     "result": {
+      "uz": "mutatsiya (bir qismida)",
+      "ru": "мутация (в части случаев)"
+     }
+    }
+   ],
+   "refs": "WHO Classification of Tumours, 5-nashr: Digestive System Tumours (2019)"
+  },
+  {
+   "slug": "gist",
+   "organ": "stomach",
+   "name": {
+    "uz": "Gastrointestinal stromal o'sma (GIST)",
+    "ru": "Гастроинтестинальная стромальная опухоль (GIST)"
+   },
+   "name_en": "Gastrointestinal stromal tumour",
+   "icd10": "C49.A",
+   "sections": {
+    "definition": {
+     "uz": "Kajal interstitsial hujayralari yo'nalishida differensiallashgan mezenximal o'sma; ko'pincha KIT yoki PDGFRA mutatsiyasi bilan.",
+     "ru": "Мезенхимальная опухоль с дифференцировкой в направлении интерстициальных клеток Кахаля; чаще с мутацией KIT или PDGFRA."
+    },
+    "epidemiology": {
+     "uz": "Oshqozon-ichak tizimining eng ko'p uchraydigan mezenximal o'smasi; ~60% oshqozonda, ~30% ingichka ichakda.",
+     "ru": "Самая частая мезенхимальная опухоль ЖКТ; ~60% в желудке, ~30% в тонкой кишке."
+    },
+    "clinical": {
+     "uz": "Qon ketish, qorin og'rig'i yoki tasodifiy topilma.",
+     "ru": "Кровотечение, боль в животе или случайная находка."
+    },
+    "gross": {
+     "uz": "Muskul qavatidan chiqqan, chegarasi aniq tugun; kesimi kulrang-pushti, qon quyilish va kistoz o'zgarishlar bilan.",
+     "ru": "Чётко отграниченный узел из мышечного слоя; на разрезе серо-розовый, с кровоизлияниями и кистозными изменениями."
+    },
+    "microscopic": {
+     "uz": "Urchuqsimon (~70%), epiteloid yoki aralash hujayralar; perinuklear vakuollar, skeyner tolalari (ingichka ichakda).",
+     "ru": "Веретеноклеточный (~70%), эпителиоидный или смешанный тип; перинуклеарные вакуоли, скейноидные волокна (в тонкой кишке)."
+    },
+    "ihc": {
+     "uz": "CD117 (KIT) va DOG1 musbat (~95%). KIT-manfiy holatlarda DOG1 va molekulyar test (PDGFRA) yordam beradi. SDH-tanqis GIST alohida guruh.",
+     "ru": "CD117 (KIT) и DOG1 позитивны (~95%). При KIT-негативных случаях помогают DOG1 и молекулярный тест (PDGFRA). SDH-дефицитные GIST — отдельная группа."
+    },
+    "differential": {
+     "uz": "Leyomioma/leyomiosarkoma (desmin+, KIT−), shvannoma (S100+), desmoid fibromatoz (β-katenin yadroviy).",
+     "ru": "Лейомиома/лейомиосаркома (десмин+, KIT−), шваннома (S100+), десмоидный фиброматоз (ядерный β-катенин)."
+    },
+    "prognosis": {
+     "uz": "Xavf o'lcham, mitoz soni (5 mm² da) va joylashuvga qarab baholanadi. Imatinib KIT/PDGFRA mutatsiyali o'smalarda samarali (PDGFRA D842V bundan mustasno).",
+     "ru": "Риск оценивается по размеру, числу митозов (на 5 мм²) и локализации. Иматиниб эффективен при мутациях KIT/PDGFRA (кроме PDGFRA D842V)."
+    }
+   },
+   "markers": [
+    {
+     "name": "CD117",
+     "result": {
+      "uz": "+",
+      "ru": "+"
+     }
+    },
+    {
+     "name": "DOG1",
+     "result": {
+      "uz": "+",
+      "ru": "+"
+     }
+    },
+    {
+     "name": "KIT / PDGFRA",
+     "result": {
+      "uz": "mutatsiya",
+      "ru": "мутация"
+     }
+    }
+   ],
+   "refs": "WHO Classification of Tumours, 5-nashr: Digestive System Tumours (2019)\nWHO Classification of Tumours, 5-nashr: Soft Tissue and Bone Tumours (2020)"
+  },
+  {
+   "slug": "liver-hcc",
+   "organ": "liver",
+   "name": {
+    "uz": "Gepatotsellulyar karsinoma",
+    "ru": "Гепатоцеллюлярная карцинома"
+   },
+   "name_en": "Hepatocellular carcinoma",
+   "icd10": "C22.0",
+   "sections": {
+    "definition": {
+     "uz": "Gepatotsitar differensiatsiyali birlamchi xavfli jigar o'smasi.",
+     "ru": "Первичная злокачественная опухоль печени с гепатоцитарной дифференцировкой."
+    },
+    "epidemiology": {
+     "uz": "Ko'pincha sirroz fonida (gepatit B, C, alkogol, metabolik kasallik) rivojlanadi.",
+     "ru": "Чаще развивается на фоне цирроза (гепатит B, C, алкоголь, метаболическая болезнь)."
+    },
+    "clinical": {
+     "uz": "Sirroz dekompensatsiyasi, vazn yo'qotish, qon zardobida AFP oshishi. Skrining UTT bilan.",
+     "ru": "Декомпенсация цирроза, потеря веса, повышение сывороточного АФП. Скрининг — УЗИ."
+    },
+    "gross": {
+     "uz": "Bitta yoki ko'p tugunli, yumshoq, sarg'ish-yashil (o't) rangli o'sma; qopqa venasiga invaziyaga moyil.",
+     "ru": "Одиночная или многоузловая мягкая желтовато-зелёная (желчь) опухоль; склонна к инвазии воротной вены."
+    },
+    "microscopic": {
+     "uz": "Qalinlashgan trabekulalar (>3 hujayra), psevdoglandulyar tuzilmalar, retikulin tarmog'ining yo'qolishi, kapillyarizatsiyalangan sinusoidlar. Hujayralar gepatotsitga o'xshaydi, o't ishlab chiqarishi mumkin.",
+     "ru": "Утолщённые трабекулы (>3 клеток), псевдожелезистые структуры, утрата ретикулиновой сети, капилляризация синусоидов. Клетки напоминают гепатоциты, возможна продукция желчи."
+    },
+    "ihc": {
+     "uz": "Arginaza-1 va HepPar-1 musbat, Glipikan-3 ko'pincha musbat; CD34 sinusoidlarda diffuz; CK7 va CK20 odatda manfiy.",
+     "ru": "Аргиназа-1 и HepPar-1 позитивны, глипикан-3 часто позитивен; CD34 диффузно в синусоидах; CK7 и CK20 обычно негативны."
+    },
+    "differential": {
+     "uz": "Gepatotsellulyar adenoma, displastik tugun, xolangiokarsinoma (CK7+, CK19+), metastatik karsinoma.",
+     "ru": "Гепатоцеллюлярная аденома, диспластический узел, холангиокарцинома (CK7+, CK19+), метастатическая карцинома."
+    },
+    "prognosis": {
+     "uz": "O'sma hajmi, tomir invaziyasi va jigar funksiyasiga (Child-Pugh) bog'liq.",
+     "ru": "Зависит от размера опухоли, сосудистой инвазии и функции печени (Child-Pugh)."
+    }
+   },
+   "markers": [
+    {
+     "name": "Arginaza-1",
+     "result": {
+      "uz": "+",
+      "ru": "+"
+     }
+    },
+    {
+     "name": "Glipikan-3",
+     "result": {
+      "uz": "+ (ko'pchiligi)",
+      "ru": "+ (большинство)"
+     }
+    },
+    {
+     "name": "CK7",
+     "result": {
+      "uz": "− (odatda)",
+      "ru": "− (обычно)"
+     }
+    },
+    {
+     "name": "CK20",
+     "result": {
+      "uz": "−",
+      "ru": "−"
+     }
+    }
+   ],
+   "refs": "WHO Classification of Tumours, 5-nashr: Digestive System Tumours (2019)"
+  },
+  {
+   "slug": "kidney-ccrcc",
+   "organ": "kidney",
+   "name": {
+    "uz": "Berrak hujayrali buyrak karsinomasi",
+    "ru": "Светлоклеточный почечно-клеточный рак"
+   },
+   "name_en": "Clear cell renal cell carcinoma",
+   "icd10": "C64",
+   "sections": {
+    "definition": {
+     "uz": "Lipid va glikogenga boy, berrak yoki eozinofil sitoplazmali hujayralardan iborat, nozik kapillyar tarmoqli buyrak karsinomasi.",
+     "ru": "Почечно-клеточная карцинома из клеток со светлой или эозинофильной цитоплазмой, богатой липидами и гликогеном, с нежной капиллярной сетью."
+    },
+    "epidemiology": {
+     "uz": "Buyrak hujayrali karsinomalarining eng ko'p uchraydigan turi (~70%). Xavf omillari: chekish, semizlik, gipertenziya, VHL sindromi.",
+     "ru": "Наиболее частый тип почечно-клеточного рака (~70%). Факторы риска: курение, ожирение, гипертензия, синдром VHL."
+    },
+    "clinical": {
+     "uz": "Ko'pincha tasodifiy topilma; klassik uchlik (gematuriya, og'riq, qo'lga uriladigan massa) kam. Paraneoplastik sindromlar bo'lishi mumkin.",
+     "ru": "Часто случайная находка; классическая триада (гематурия, боль, пальпируемое образование) редка. Возможны паранеопластические синдромы."
+    },
+    "gross": {
+     "uz": "Chegarasi aniq, oltinsimon-sariq tugun, qon quyilish, nekroz va kistalar bilan (\"rang-barang\" kesim).",
+     "ru": "Чётко отграниченный золотисто-жёлтый узел с кровоизлияниями, некрозом и кистами («пёстрый» разрез)."
+    },
+    "microscopic": {
+     "uz": "Uyasimon yoki alveolyar o'sish, nozik \"tovuq to'ri\" kapillyarlar; berrak sitoplazmali hujayralar. Daraja WHO/ISUP tizimi bo'yicha yadrocha ko'rinishiga qarab (1–4).",
+     "ru": "Гнёздный или альвеолярный рост, нежные капилляры по типу «куриной сетки»; клетки со светлой цитоплазмой. Степень — по системе WHO/ISUP по ядрышкам (1–4)."
+    },
+    "ihc": {
+     "uz": "PAX8+, CA IX aylana membrana bo'yalishi, CD10+; CK7 odatda manfiy, AMACR manfiy.",
+     "ru": "PAX8+, циркулярное мембранное окрашивание CA IX, CD10+; CK7 обычно негативен, AMACR негативен."
+    },
+    "differential": {
+     "uz": "Berrak hujayrali papillyar buyrak o'smasi (CK7+, CA IX \"kosachasimon\"), xromofob karsinoma (CK7 diffuz), TFE3-translokatsiyali karsinoma, buyrak usti bezi korteksi o'smasi.",
+     "ru": "Светлоклеточная папиллярная опухоль почки (CK7+, CA IX «чашевидно»), хромофобный рак (CK7 диффузно), транслокационный рак с TFE3, опухоли коры надпочечника."
+    },
+    "prognosis": {
+     "uz": "Bosqich, ISUP darajasi, sarkomatoid/rabdoid o'zgarishlar va nekrozga bog'liq.",
+     "ru": "Зависит от стадии, степени ISUP, саркоматоидных/рабдоидных изменений и некроза."
+    }
+   },
+   "markers": [
+    {
+     "name": "PAX8",
+     "result": {
+      "uz": "+",
+      "ru": "+"
+     }
+    },
+    {
+     "name": "CA IX",
+     "result": {
+      "uz": "+ (aylana)",
+      "ru": "+ (циркулярно)"
+     }
+    },
+    {
+     "name": "CK7",
+     "result": {
+      "uz": "−",
+      "ru": "−"
+     }
+    },
+    {
+     "name": "VHL",
+     "result": {
+      "uz": "inaktivatsiya",
+      "ru": "инактивация"
+     }
+    }
+   ],
+   "refs": "WHO Classification of Tumours, 5-nashr: Urinary and Male Genital Tumours (2022)"
+  },
+  {
+   "slug": "prostate-adenocarcinoma",
+   "organ": "prostate",
+   "name": {
+    "uz": "Prostata atsinar adenokarsinomasi",
+    "ru": "Ацинарная аденокарцинома предстательной железы"
+   },
+   "name_en": "Prostatic acinar adenocarcinoma",
+   "icd10": "C61",
+   "sections": {
+    "definition": {
+     "uz": "Bazal hujayra qavati bo'lmagan, prostata sekretor epiteliysidan kelib chiqqan invaziv bezsimon karsinoma.",
+     "ru": "Инвазивная железистая карцинома из секреторного эпителия простаты без слоя базальных клеток."
+    },
+    "epidemiology": {
+     "uz": "Erkaklarda eng ko'p uchraydigan saratonlardan biri; yosh bilan xavf ortadi.",
+     "ru": "Один из самых частых видов рака у мужчин; риск растёт с возрастом."
+    },
+    "clinical": {
+     "uz": "Ko'pincha PSA oshishi yoki to'g'ri ichak orqali tekshiruvda aniqlanadi; erta bosqichda belgisiz.",
+     "ru": "Чаще выявляется по повышению ПСА или при ректальном исследовании; на ранних стадиях бессимптомна."
+    },
+    "gross": {
+     "uz": "Ko'pincha periferik zonada; makroskopik aniqlash qiyin bo'lishi mumkin.",
+     "ru": "Чаще в периферической зоне; макроскопически может плохо определяться."
+    },
+    "microscopic": {
+     "uz": "Mayda, zich joylashgan bezlar, bitta qator hujayralar, aniq yadrochalar, ichida ko'k shilliq yoki kristalloidlar. Perinevral invaziya va glomerulyatsiya xos belgilar. Gleason naqshlari asosida ISUP guruhi (1–5) beriladi.",
+     "ru": "Мелкие плотно расположенные железы, один ряд клеток, заметные ядрышки, голубой муцин или кристаллоиды в просвете. Характерны периневральная инвазия и гломерулоидные структуры. На основе паттернов Глисона присваивается группа ISUP (1–5)."
+    },
+    "ihc": {
+     "uz": "Bazal hujayra markerlari (p63, yuqori molekulyar keratin) yo'q, AMACR+. Kelib chiqishni tasdiqlash uchun NKX3.1 va PSA.",
+     "ru": "Маркеры базальных клеток (p63, высокомолекулярный кератин) отсутствуют, AMACR+. Для подтверждения происхождения — NKX3.1 и ПСА."
+    },
+    "differential": {
+     "uz": "Atrofiya, adenoz (bazal hujayralar saqlangan), urotelial karsinoma (GATA3+), metastaz.",
+     "ru": "Атрофия, аденоз (базальные клетки сохранены), уротелиальная карцинома (GATA3+), метастаз."
+    },
+    "prognosis": {
+     "uz": "ISUP guruhi, PSA va bosqichga bog'liq; past xavfli holatlarda faol kuzatuv mumkin.",
+     "ru": "Зависит от группы ISUP, ПСА и стадии; при низком риске возможно активное наблюдение."
+    }
+   },
+   "markers": [
+    {
+     "name": "NKX3.1",
+     "result": {
+      "uz": "+",
+      "ru": "+"
+     }
+    },
+    {
+     "name": "PSA",
+     "result": {
+      "uz": "+",
+      "ru": "+"
+     }
+    },
+    {
+     "name": "AMACR",
+     "result": {
+      "uz": "+",
+      "ru": "+"
+     }
+    },
+    {
+     "name": "p63",
+     "result": {
+      "uz": "− (bazal qavat yo'q)",
+      "ru": "− (нет базального слоя)"
+     }
+    },
+    {
+     "name": "CK7",
+     "result": {
+      "uz": "−",
+      "ru": "−"
+     }
+    }
+   ],
+   "refs": "WHO Classification of Tumours, 5-nashr: Urinary and Male Genital Tumours (2022)"
+  },
+  {
+   "slug": "thyroid-ptc",
+   "organ": "thyroid",
+   "name": {
+    "uz": "Papillyar qalqonsimon bez karsinomasi",
+    "ru": "Папиллярный рак щитовидной железы"
+   },
+   "name_en": "Papillary thyroid carcinoma",
+   "icd10": "C73",
+   "sections": {
+    "definition": {
+     "uz": "Follikulyar hujayralardan kelib chiqqan, o'ziga xos yadro o'zgarishlari bilan tavsiflanadigan xavfli epitelial o'sma.",
+     "ru": "Злокачественная эпителиальная опухоль из фолликулярных клеток с характерными ядерными изменениями."
+    },
+    "epidemiology": {
+     "uz": "Qalqonsimon bezning eng ko'p uchraydigan xavfli o'smasi; ayollarda ko'proq. Bolalikdagi nurlanish xavf omili.",
+     "ru": "Самая частая злокачественная опухоль щитовидной железы; чаще у женщин. Фактор риска — облучение в детстве."
+    },
+    "clinical": {
+     "uz": "Og'riqsiz tugun; bo'yin limfa tugunlariga metastaz ko'p uchraydi. Tashxisda ko'pincha ingichka igna aspiratsiyasi (Bethesda tizimi) ishlatiladi.",
+     "ru": "Безболезненный узел; часты метастазы в лимфоузлы шеи. В диагностике широко применяется тонкоигольная аспирация (система Bethesda)."
+    },
+    "gross": {
+     "uz": "Oq-kulrang, chegarasi notekis, kalsinatlangan tugun; ba'zan kistoz.",
+     "ru": "Бело-серый узел с нечёткими краями и кальцинатами; иногда кистозный."
+    },
+    "microscopic": {
+     "uz": "Fibrovaskulyar o'zakli papillalar, psammoma tanachalari. Yadro belgilari: kattalashgan, bir-birini qoplaydigan, \"bo'sh\" (Orfan Enni ko'zi) yadrolar, yadro egatchalari va psevdoinkluziyalar.",
+     "ru": "Сосочки с фиброваскулярным стержнем, псаммомные тельца. Ядерные признаки: увеличенные, наслаивающиеся, «пустые» ядра («глаза сиротки Энни»), ядерные борозды и псевдовключения."
+    },
+    "ihc": {
+     "uz": "TTF-1+, PAX8+, tireoglobulin+. BRAF V600E ko'p holatlarda (klassik turda); follikulyar variantda RAS mutatsiyalari ko'proq.",
+     "ru": "TTF-1+, PAX8+, тиреоглобулин+. BRAF V600E во многих случаях (классический тип); в фолликулярном варианте чаще мутации RAS."
+    },
+    "differential": {
+     "uz": "Papillyar giperplaziya, NIFTP, follikulyar karsinoma, medullyar karsinoma (kalsitonin+, xromogranin+).",
+     "ru": "Папиллярная гиперплазия, NIFTP, фолликулярный рак, медуллярный рак (кальцитонин+, хромогранин+)."
+    },
+    "prognosis": {
+     "uz": "Odatda juda yaxshi; 10 yillik omon qolish 90% dan yuqori. Uzun hujayrali va mixsimon (hobnail) variantlar agressivroq.",
+     "ru": "Обычно отличный; 10-летняя выживаемость выше 90%. Высококлеточный и hobnail-варианты агрессивнее."
+    }
+   },
+   "markers": [
+    {
+     "name": "TTF-1",
+     "result": {
+      "uz": "+",
+      "ru": "+"
+     }
+    },
+    {
+     "name": "PAX8",
+     "result": {
+      "uz": "+",
+      "ru": "+"
+     }
+    },
+    {
+     "name": "Tireoglobulin",
+     "result": {
+      "uz": "+",
+      "ru": "+"
+     }
+    },
+    {
+     "name": "CK7",
+     "result": {
+      "uz": "+",
+      "ru": "+"
+     }
+    },
+    {
+     "name": "BRAF V600E",
+     "result": {
+      "uz": "mutatsiya (ko'pchiligi)",
+      "ru": "мутация (большинство)"
+     }
+    }
+   ],
+   "refs": "WHO Classification of Tumours, 5-nashr: Endocrine and Neuroendocrine Tumours (2022)"
+  },
+  {
+   "slug": "skin-melanoma",
+   "organ": "skin",
+   "name": {
+    "uz": "Melanoma",
+    "ru": "Меланома"
+   },
+   "name_en": "Melanoma",
+   "icd10": "C43",
+   "sections": {
+    "definition": {
+     "uz": "Melanotsitlardan kelib chiqqan xavfli o'sma.",
+     "ru": "Злокачественная опухоль из меланоцитов."
+    },
+    "epidemiology": {
+     "uz": "Ultrabinafsha nurlanish, ochiq teri tipi, ko'p sonli yoki atipik nevuslar va oilaviy anamnez xavf omillari.",
+     "ru": "Факторы риска: ультрафиолетовое облучение, светлый фототип кожи, множественные или атипичные невусы, семейный анамнез."
+    },
+    "clinical": {
+     "uz": "ABCDE belgilari: asimmetriya, notekis chegara, rang xilma-xilligi, diametr >6 mm, o'zgarish (evolyutsiya).",
+     "ru": "Признаки ABCDE: асимметрия, неровные края, неоднородность цвета, диаметр >6 мм, изменение (эволюция)."
+    },
+    "gross": {
+     "uz": "Asimmetrik, rang-barang pigmentli dog' yoki tugun; yarali bo'lishi mumkin.",
+     "ru": "Асимметричное пятно или узел с пёстрой пигментацией; возможно изъязвление."
+    },
+    "microscopic": {
+     "uz": "Atipik melanotsitlarning epidermis bo'ylab yuqoriga tarqalishi (pagetoid), chuqurlikda yetilmaslik, dermal mitozlar, yadro pleomorfizmi. Breslou qalinligi (mm) va yaralanish asosiy prognostik omillar.",
+     "ru": "Педжетоидное распространение атипичных меланоцитов по эпидермису, отсутствие созревания в глубину, дермальные митозы, ядерный плеоморфизм. Толщина по Бреслоу (мм) и изъязвление — главные прогностические факторы."
+    },
+    "ihc": {
+     "uz": "SOX10, S100, Melan-A, HMB-45 musbat (desmoplastik melanomada odatda faqat SOX10/S100). PRAME ko'pchiligida musbat. BRAF V600E taxminan yarmida.",
+     "ru": "SOX10, S100, Melan-A, HMB-45 позитивны (при десмопластической меланоме обычно только SOX10/S100). PRAME позитивен в большинстве случаев. BRAF V600E примерно в половине случаев."
+    },
+    "differential": {
+     "uz": "Displastik yoki Spits nevusi, pigmentli bazal hujayrali karsinoma, past differensiallashgan karsinoma yoki sarkoma (melanotsitar markerlar manfiy).",
+     "ru": "Диспластический невус или невус Шпитц, пигментная базалиома, низкодифференцированная карцинома или саркома (меланоцитарные маркеры негативны)."
+    },
+    "prognosis": {
+     "uz": "Breslou qalinligi, yaralanish va limfa tuguni holati (AJCC bosqichi) bilan aniqlanadi. Immunoterapiya va BRAF/MEK ingibitorlari natijalarni sezilarli yaxshiladi.",
+     "ru": "Определяется толщиной по Бреслоу, изъязвлением и статусом лимфоузлов (стадия AJCC). Иммунотерапия и ингибиторы BRAF/MEK значительно улучшили результаты."
+    }
+   },
+   "markers": [
+    {
+     "name": "SOX10",
+     "result": {
+      "uz": "+",
+      "ru": "+"
+     }
+    },
+    {
+     "name": "S100",
+     "result": {
+      "uz": "+",
+      "ru": "+"
+     }
+    },
+    {
+     "name": "Melan-A",
+     "result": {
+      "uz": "+",
+      "ru": "+"
+     }
+    },
+    {
+     "name": "HMB-45",
+     "result": {
+      "uz": "+",
+      "ru": "+"
+     }
+    },
+    {
+     "name": "BRAF V600E",
+     "result": {
+      "uz": "mutatsiya (~50%)",
+      "ru": "мутация (~50%)"
+     }
+    }
+   ],
+   "refs": "WHO Classification of Tumours, 5-nashr: Skin Tumours"
+  },
+  {
+   "slug": "skin-bcc",
+   "organ": "skin",
+   "name": {
+    "uz": "Bazal hujayrali karsinoma",
+    "ru": "Базальноклеточная карцинома"
+   },
+   "name_en": "Basal cell carcinoma",
+   "icd10": "C44",
+   "sections": {
+    "definition": {
+     "uz": "Epidermisning bazal hujayralariga o'xshash hujayralardan iborat, sekin o'suvchi, mahalliy destruktiv xavfli o'sma.",
+     "ru": "Медленно растущая местнодеструктивная злокачественная опухоль из клеток, сходных с базальными клетками эпидермиса."
+    },
+    "epidemiology": {
+     "uz": "Odamlarda eng ko'p uchraydigan saraton; quyosh ta'siridagi teri (yuz, bo'yin).",
+     "ru": "Самый частый рак у человека; кожа, подверженная солнцу (лицо, шея)."
+    },
+    "clinical": {
+     "uz": "Marvaridsimon, telangiektaziyali tugun; markazida yara (\"kemiruvchi yara\").",
+     "ru": "Жемчужный узел с телеангиэктазиями; язва в центре («разъедающая язва»)."
+    },
+    "gross": {
+     "uz": "Teri ustidan ko'tarilgan, chetlari marvaridsimon tugun yoki yassi plaka.",
+     "ru": "Возвышающийся узел с жемчужными краями или плоская бляшка."
+    },
+    "microscopic": {
+     "uz": "Bazaloid hujayralar uyalari, chetida palisad joylashuv, o'sma va stroma orasida retraksion yoriq, miksoid stroma. Turlari: nodulyar, yuza, infiltrativ, morfeaform.",
+     "ru": "Гнёзда базалоидных клеток с палисадом по периферии, ретракционные щели между опухолью и стромой, миксоидная строма. Типы: нодулярный, поверхностный, инфильтративный, морфеаподобный."
+    },
+    "ihc": {
+     "uz": "BerEP4+, EMA−; diagnoz asosan morfologik.",
+     "ru": "BerEP4+, EMA−; диагноз в основном морфологический."
+    },
+    "differential": {
+     "uz": "Bazaloid yassi hujayrali karsinoma (BerEP4−, EMA+), trixoepitelioma (stroma bilan yoriq yo'q, CK20+ Merkel hujayralari), Merkel hujayrali karsinoma.",
+     "ru": "Базалоидный плоскоклеточный рак (BerEP4−, EMA+), трихоэпителиома (без щелей со стромой, CK20+ клетки Меркеля), карцинома из клеток Меркеля."
+    },
+    "prognosis": {
+     "uz": "Metastaz juda kam; infiltrativ turlari va to'liq olib tashlanmagan o'smalar qaytalanadi.",
+     "ru": "Метастазирует крайне редко; инфильтративные типы и неполностью удалённые опухоли рецидивируют."
+    }
+   },
+   "markers": [
+    {
+     "name": "BerEP4",
+     "result": {
+      "uz": "+",
+      "ru": "+"
+     }
+    }
+   ],
+   "refs": "WHO Classification of Tumours, 5-nashr: Skin Tumours"
+  },
+  {
+   "slug": "lymph-dlbcl",
+   "organ": "lymph",
+   "name": {
+    "uz": "Diffuz katta B-hujayrali limfoma",
+    "ru": "Диффузная В-крупноклеточная лимфома"
+   },
+   "name_en": "Diffuse large B-cell lymphoma",
+   "icd10": "C83.3",
+   "sections": {
+    "definition": {
+     "uz": "Katta B-limfotsitlarning diffuz proliferatsiyasidan iborat agressiv limfoma.",
+     "ru": "Агрессивная лимфома из диффузно пролиферирующих крупных В-лимфоцитов."
+    },
+    "epidemiology": {
+     "uz": "Kattalardagi eng ko'p uchraydigan no-Xodjkin limfomasi.",
+     "ru": "Самая частая неходжкинская лимфома у взрослых."
+    },
+    "clinical": {
+     "uz": "Tez kattalashuvchi limfa tugunlari yoki tugundan tashqari o'sma; B-simptomlar (isitma, terlash, vazn yo'qotish).",
+     "ru": "Быстро увеличивающиеся лимфоузлы или экстранодальная опухоль; B-симптомы (лихорадка, потливость, потеря веса)."
+    },
+    "gross": {
+     "uz": "Kattalashgan, \"baliq go'shti\"ga o'xshash bir xil kesimli limfa tuguni.",
+     "ru": "Увеличенный лимфоузел с однородной поверхностью разреза по типу «рыбьего мяса»."
+    },
+    "microscopic": {
+     "uz": "Tugun arxitekturasini to'liq buzuvchi katta hujayralar (makrofag yadrosidan katta yoki normal limfotsitdan 2 baravar katta) — sentroblast yoki immunoblast ko'rinishida.",
+     "ru": "Крупные клетки (больше ядра макрофага или в 2 раза больше нормального лимфоцита), полностью стирающие архитектуру узла, — по типу центробластов или иммунобластов."
+    },
+    "ihc": {
+     "uz": "CD20+, PAX5+, CD45+. Hans algoritmi (CD10, BCL6, MUM1) bilan GCB va non-GCB turlarga bo'linadi. MYC, BCL2 va BCL6 qayta tuzilishlari FISH bilan tekshiriladi.",
+     "ru": "CD20+, PAX5+, CD45+. По алгоритму Hans (CD10, BCL6, MUM1) подразделяется на GCB и non-GCB. Перестройки MYC, BCL2 и BCL6 исследуются методом FISH."
+    },
+    "differential": {
+     "uz": "Burkitt limfomasi (Ki-67 ~100%, MYC), klassik Xodjkin limfomasi, karsinoma va melanoma metastazi (CD45 manfiy).",
+     "ru": "Лимфома Беркитта (Ki-67 ~100%, MYC), классическая лимфома Ходжкина, метастазы карциномы и меланомы (CD45 негативны)."
+    },
+    "prognosis": {
+     "uz": "R-CHOP kimyo-immunoterapiyasi bilan ko'pchilik bemorlarda davolanish mumkin; IPI indeksi va molekulyar tur prognozni belgilaydi.",
+     "ru": "При химиоиммунотерапии R-CHOP излечение возможно у большинства пациентов; прогноз определяют индекс IPI и молекулярный подтип."
+    }
+   },
+   "markers": [
+    {
+     "name": "CD20",
+     "result": {
+      "uz": "+",
+      "ru": "+"
+     }
+    },
+    {
+     "name": "PAX5",
+     "result": {
+      "uz": "+",
+      "ru": "+"
+     }
+    },
+    {
+     "name": "CD45",
+     "result": {
+      "uz": "+",
+      "ru": "+"
+     }
+    },
+    {
+     "name": "Ki-67",
+     "result": {
+      "uz": "yuqori",
+      "ru": "высокий"
+     }
+    }
+   ],
+   "refs": "WHO Classification of Tumours, 5-nashr: Haematolymphoid Tumours"
+  },
+  {
+   "slug": "lymph-chl",
+   "organ": "lymph",
+   "name": {
+    "uz": "Klassik Xodjkin limfomasi",
+    "ru": "Классическая лимфома Ходжкина"
+   },
+   "name_en": "Classic Hodgkin lymphoma",
+   "icd10": "C81",
+   "sections": {
+    "definition": {
+     "uz": "Reaktiv yallig'lanish hujayralari fonida kam sonli Xodjkin va Rid–Shternberg (HRS) hujayralaridan iborat B-hujayrali limfoma.",
+     "ru": "В-клеточная лимфома из немногочисленных клеток Ходжкина и Рид–Штернберг (HRS) на фоне реактивных воспалительных клеток."
+    },
+    "epidemiology": {
+     "uz": "Ikki yosh cho'qqisi: yosh kattalar va keksalar. Ayrim holatlar EBV bilan bog'liq.",
+     "ru": "Два возрастных пика: молодые взрослые и пожилые. Часть случаев связана с ВЭБ."
+    },
+    "clinical": {
+     "uz": "Bo'yin yoki ko'ks oralig'i limfa tugunlarining og'riqsiz kattalashuvi, B-simptomlar, qichishish.",
+     "ru": "Безболезненное увеличение шейных или медиастинальных лимфоузлов, B-симптомы, зуд."
+    },
+    "gross": {
+     "uz": "Kattalashgan limfa tugunlari; tugunli sklerozda fibroz tasmalar ko'rinadi.",
+     "ru": "Увеличенные лимфоузлы; при нодулярном склерозе видны фиброзные тяжи."
+    },
+    "microscopic": {
+     "uz": "Katta, ikki yadroli yoki ko'p bo'lakli yadroli, yirik eozinofil yadrochali HRS hujayralari (\"boyqush ko'zi\"); fonda limfotsitlar, eozinofillar, plazma hujayralari. Turlari: tugunli skleroz, aralash hujayrali, limfotsitlarga boy, limfotsitlar kamaygan.",
+     "ru": "Крупные двуядерные или многодольчатые клетки HRS с крупными эозинофильными ядрышками («совиный глаз»); фон — лимфоциты, эозинофилы, плазмоциты. Типы: нодулярный склероз, смешанно-клеточный, богатый лимфоцитами, с лимфоидным истощением."
+    },
+    "ihc": {
+     "uz": "HRS hujayralari CD30+, CD15+ (ko'pchiligi), PAX5 kuchsiz; CD45−, CD20 odatda − yoki notekis.",
+     "ru": "Клетки HRS CD30+, CD15+ (большинство), PAX5 слабо; CD45−, CD20 обычно − или неравномерно."
+    },
+    "differential": {
+     "uz": "Nodulyar limfotsit ustunligidagi Xodjkin limfomasi (CD20+, CD30−), T-hujayra/gistiotsitlarga boy B-hujayrali limfoma, anaplastik katta hujayrali limfoma (ALK±, CD15−).",
+     "ru": "Нодулярная лимфома Ходжкина с лимфоидным преобладанием (CD20+, CD30−), В-крупноклеточная лимфома, богатая Т-клетками/гистиоцитами, анапластическая крупноклеточная лимфома (ALK±, CD15−)."
+    },
+    "prognosis": {
+     "uz": "Zamonaviy davolash bilan juda yaxshi; ko'pchilik bemorlar sog'ayadi.",
+     "ru": "При современном лечении очень хороший; большинство пациентов излечиваются."
+    }
+   },
+   "markers": [
+    {
+     "name": "CD30",
+     "result": {
+      "uz": "+",
+      "ru": "+"
+     }
+    },
+    {
+     "name": "CD15",
+     "result": {
+      "uz": "+",
+      "ru": "+"
+     }
+    },
+    {
+     "name": "PAX5",
+     "result": {
+      "uz": "+ (kuchsiz)",
+      "ru": "+ (слабо)"
+     }
+    },
+    {
+     "name": "CD45",
+     "result": {
+      "uz": "−",
+      "ru": "−"
+     }
+    },
+    {
+     "name": "CD20",
+     "result": {
+      "uz": "−/notekis",
+      "ru": "−/неравномерно"
+     }
+    }
+   ],
+   "refs": "WHO Classification of Tumours, 5-nashr: Haematolymphoid Tumours"
+  },
+  {
+   "slug": "cervix-scc",
+   "organ": "cervix",
+   "name": {
+    "uz": "Bachadon bo'ynining yassi hujayrali karsinomasi (HPV bilan bog'liq)",
+    "ru": "Плоскоклеточный рак шейки матки (HPV-ассоциированный)"
+   },
+   "name_en": "Squamous cell carcinoma of cervix, HPV-associated",
+   "icd10": "C53",
+   "sections": {
+    "definition": {
+     "uz": "Yuqori xavfli HPV infeksiyasi bilan bog'liq, yassi hujayrali differensiatsiyali invaziv karsinoma; odatda HSIL (CIN2–3) dan rivojlanadi.",
+     "ru": "Инвазивная карцинома с плоскоклеточной дифференцировкой, ассоциированная с ВПЧ высокого риска; обычно развивается из HSIL (CIN2–3)."
+    },
+    "epidemiology": {
+     "uz": "Bachadon bo'yni saratonining eng ko'p uchraydigan turi. HPV vaksinatsiyasi va skrining (PAP-test, HPV-test) bilan oldini olish mumkin.",
+     "ru": "Самый частый тип рака шейки матки. Предотвращается вакцинацией против ВПЧ и скринингом (ПАП-тест, ВПЧ-тест)."
+    },
+    "clinical": {
+     "uz": "Kontaktli yoki menopauzadan keyingi qon ketish; erta bosqichda belgisiz, skriningda aniqlanadi.",
+     "ru": "Контактные или постменопаузальные кровотечения; на ранних стадиях бессимптомен, выявляется при скрининге."
+    },
+    "gross": {
+     "uz": "Ekzofit, yarali yoki endofit (bochkasimon) o'sma.",
+     "ru": "Экзофитная, изъязвлённая или эндофитная (бочкообразная) опухоль."
+    },
+    "microscopic": {
+     "uz": "Stroma ichiga infiltratsiya qiluvchi atipik yassi hujayralar uyalari; keratinlangan yoki keratinlanmagan turi. Atrofida ko'pincha HSIL.",
+     "ru": "Гнёзда атипичных плоских клеток, инфильтрирующие строму; ороговевающий или неороговевающий тип. По соседству часто HSIL."
+    },
+    "ihc": {
+     "uz": "p16 kuchli diffuz \"blok\" bo'yalish, p40+, p63+. HPV holati WHO 5-nashrida tasnif asosini tashkil qiladi.",
+     "ru": "p16 сильное диффузное «блоковое» окрашивание, p40+, p63+. Статус ВПЧ лежит в основе классификации WHO 5-го издания."
+    },
+    "differential": {
+     "uz": "Psevdoepitelioma tipidagi giperplaziya, HSIL bilan bezlarga tarqalish (invaziya emas), adenoskvamoz karsinoma.",
+     "ru": "Псевдоэпителиоматозная гиперплазия, HSIL с распространением в железы (не инвазия), аденосквамозная карцинома."
+    },
+    "prognosis": {
+     "uz": "FIGO bosqichiga, o'sma o'lchami va limfa tugunlariga bog'liq.",
+     "ru": "Зависит от стадии FIGO, размера опухоли и лимфоузлов."
+    }
+   },
+   "markers": [
+    {
+     "name": "p16",
+     "result": {
+      "uz": "+ (blok)",
+      "ru": "+ (блоковое)"
+     }
+    },
+    {
+     "name": "p40",
+     "result": {
+      "uz": "+",
+      "ru": "+"
+     }
+    },
+    {
+     "name": "p63",
+     "result": {
+      "uz": "+",
+      "ru": "+"
+     }
+    },
+    {
+     "name": "CK5/6",
+     "result": {
+      "uz": "+",
+      "ru": "+"
+     }
+    }
+   ],
+   "refs": "WHO Classification of Tumours, 5-nashr: Female Genital Tumours (2020)"
+  }
+ ]
+}
