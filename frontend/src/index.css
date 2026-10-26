@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Semantic tokens: components use bg-surface / text-fg / border-line etc., which flip with .dark */
+:root {
+  --c-bg: #f5f7f9;
+  --c-surface: #ffffff;
+  --c-surface-2: #f1f5f9;
+  --c-line: #e2e8f0;
+  --c-fg: #0f172a;
+  --c-muted: #64748b;
+  --c-primary: #0f8a7e;
+  --c-primary-strong: #0b7268;
+  --c-primary-soft: #e6f7f4;
+  --c-primary-ink: #0b7268;
+  --c-ink: #0f172a;
+  --c-ink-fg: #ffffff;
+}
+.dark {
+  --c-bg: #0b1120;
+  --c-surface: #111827;
+  --c-surface-2: #1e293b;
+  --c-line: #263244;
+  --c-fg: #e5e7eb;
+  --c-muted: #94a3b8;
+  --c-primary: #14b8a6;
+  --c-primary-strong: #2dd4bf;
+  --c-primary-soft: rgba(20, 184, 166, 0.14);
+  --c-primary-ink: #5eead4;
+  --c-ink: #e5e7eb;
+  --c-ink-fg: #0b1120;
+}
+
+@theme inline {
+  --color-bg: var(--c-bg);
+  --color-surface: var(--c-surface);
+  --color-surface-2: var(--c-surface-2);
+  --color-line: var(--c-line);
+  --color-fg: var(--c-fg);
+  --color-muted: var(--c-muted);
+  --color-primary: var(--c-primary);
+  --color-primary-strong: var(--c-primary-strong);
+  --color-primary-soft: var(--c-primary-soft);
+  --color-primary-ink: var(--c-primary-ink);
+  --color-ink: var(--c-ink);
+  --color-ink-fg: var(--c-ink-fg);
+}
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+html, body, #root { min-height: 100%; }
+body {
+  background: var(--c-bg);
+  color: var(--c-fg);
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+}
+.safe-bottom { padding-bottom: max(env(safe-area-inset-bottom), 0.25rem); }
+.safe-top { padding-top: env(safe-area-inset-top); }
+.scrollbar-none { scrollbar-width: none; }
+.scrollbar-none::-webkit-scrollbar { display: none; }
+.fade-in { animation: fade-in .18s ease-out; }
+@keyframes fade-in { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: none; } }

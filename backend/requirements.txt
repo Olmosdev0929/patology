@@ -1,0 +1,12 @@
+fastapi>=0.115
+starlette>=0.40          # FileResponse HTTP Range support (PDF streaming)
+uvicorn[standard]>=0.30
+sqlalchemy[asyncio]>=2.0.30
+asyncpg>=0.29
+alembic>=1.13
+pydantic>=2.7
+aiogram>=3.13,<4
+pyjwt>=2.8
+python-multipart>=0.0.9
+python-dotenv>=1.0
+pypdf>=5.0
