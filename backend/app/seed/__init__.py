@@ -32,9 +32,9 @@ async def seed_atlas(session: AsyncSession) -> None:
         ))
 
 
-async def seed_inventory(session: AsyncSession) -> None:
+async def seed_inventory(session: AsyncSession, demo_stock: bool = False) -> None:
     existing = set((await session.execute(select(IgxMarker.name))).scalars())
-    markers, lots, usage = inventory.build()
+    markers, lots, usage = inventory.build(demo_stock=demo_stock)
     for spec in markers:
         if spec["name"] in existing:
             continue
@@ -109,9 +109,9 @@ async def seed_demo(session: AsyncSession) -> None:
         await session.flush()
 
 
-async def run(session: AsyncSession, demo: bool = False) -> None:
+async def run(session: AsyncSession, demo: bool = False, demo_stock: bool | None = None) -> None:
     await seed_atlas(session)
-    await seed_inventory(session)
+    await seed_inventory(session, demo if demo_stock is None else demo_stock)
     await seed_academy(session)
     await session.flush()
     await seed_gallery(session)
