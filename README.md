@@ -13,6 +13,21 @@ Pastki navigatsiya: **Biopsiyalar · IGX Ombor · Atlas Baza · Ta'lim · Galere
 | **5. Ta'lim (Smart Academy)** | Kitoblar, slaydlar, videolar (YouTube havolasi ilova ichida ochiladi); gapma-gap parallel o'quvchi (EN + UZ + RU, Web Speech orqali ovoz, atamalar), bir bosishda Anki kartasi, SM-2 takrorlash (Again/Hard/Good/Easy), kunlik holatli viktorina |
 | **6. Admin va xavfsizlik** | RBAC (4 rol), xodimlar KPI, hash-zanjirli audit jurnali (PostgreSQL'da `UPDATE`/`DELETE` trigger bilan bloklangan) |
 
+## Telegram bot menyusi
+
+Asosiy ishlarni ilovani ochmasdan, bot ichida tugmalar orqali bajarish mumkin. `/start` bot va ilova haqida ma'lumot, foydalanish yo'riqnomasi va asosiy menyuni yuboradi; `/menu` menyuni qayta ochadi, `/cancel` boshlangan amalni bekor qiladi.
+
+| Bo'lim | Kim uchun | Imkoniyatlar |
+|---|---|---|
+| 🧫 Biopsiyalar | patolog, laborant | yangi holat (a'zo → bemor → yosh → jins → klinik taxmin → panel, Smart Tandem takliflari), ro'yxat, holat kartasi, panelni tasdiqlash (patolog), hisobot va stiker havolasi |
+| 🧪 IGX Ombor | patolog, laborant | qoldiq, muddati yaqin / kam / tugagan markerlar, qidirish, lot qabul qilish va hisobdan chiqarish (laborant) |
+| 📊 Sarf statistikasi | patolog, laborant | 30 kunlik sarf, eng ko'p ishlatilganlar, necha kunga yetishi |
+| 📚 Atlas | hamma | kasallik, ICD-10 yoki marker bo'yicha qidirish |
+| 🎓 Ta'lim | hamma | kunlik viktorina, Anki takrorlash |
+| 👑 Admin | Super Admin | xodimlarga rol berish, bloklash |
+
+Rollar API bilan bir xil tekshiriladi; laborantga bemor ismi bosh harflar bilan ko'rsatiladi. Bot orqali qilingan o'zgarishlar audit jurnaliga `"via": "bot"` belgisi bilan yoziladi.
+
 ## Katta kitoblar (yuzlab MB'lik PDF)
 
 Admin **Ta'lim → Kitoblar → PDF kitob yuklash** orqali 2 GB gacha (`MAX_BOOK_MB`) PDF joylaydi.
@@ -36,10 +51,10 @@ backend/            FastAPI + SQLAlchemy 2.0 (async) + aiogram 3
   app/models.py     ma'lumotlar bazasi modellari
   app/services/     scoring, sm2, inventory (FEFO), tandem, biopsy workflow
   app/routers/      auth, admin, inventory, biopsies, images, atlas, academy
-  app/bot/          Telegram bot: bildirishnomalar, inline tasdiqlash, /login
+  app/bot/          Telegram bot: tugmali menyu, bildirishnomalar, inline tasdiqlash, /login
   app/seed/         atlas (JSON), inventar, akademiya, shablonlar
   migrations/       Alembic migratsiyalari (ilova ishga tushganda avtomatik qo'llanadi)
-  tests/            49 ta test (SQLite va PostgreSQL)
+  tests/            56 ta test (SQLite va PostgreSQL)
 frontend/           React 18 + Vite + Tailwind 4 + lucide-react
 Dockerfile          monolit konteyner (frontend build + API + bot [+ PostgreSQL])
 railway.json

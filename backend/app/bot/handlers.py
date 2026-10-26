@@ -1,21 +1,21 @@
-"""Incoming bot updates: launcher, web login links, inline panel approval."""
+"""Incoming bot updates: web login links, language, inline panel approval (the button menu lives in menu.py)."""
 import html
 import secrets
 from datetime import datetime, timedelta, timezone
 
 from aiogram import Bot, Dispatcher, F, Router
 from aiogram.client.default import DefaultBotProperties
-from aiogram.filters import Command, CommandStart
-from aiogram.types import CallbackQuery, MenuButtonWebApp, Message, WebAppInfo
+from aiogram.filters import Command
+from aiogram.types import BotCommand, CallbackQuery, MenuButtonWebApp, Message, WebAppInfo
 from sqlalchemy import select
 
 from .. import config
 from ..database import SessionLocal
-from ..models import IgxMarker, LoginToken, Role, User
+from ..models import LoginToken, Role, User
 from ..routers.auth import upsert_telegram_user
 from ..services import biopsy as workflow
-from ..services.inventory import InsufficientStock, status_tags
-from . import notify
+from ..services.inventory import InsufficientStock
+from . import menu, notify
 from .texts import t
 
 router = Router()
@@ -24,19 +24,6 @@ router = Router()
 def _tg_dict(u) -> dict:
     return {"id": u.id, "first_name": u.first_name, "last_name": u.last_name,
             "username": u.username, "language_code": u.language_code}
-
-
-@router.message(CommandStart())
-async def start(message: Message):
-    async with SessionLocal() as session:
-        user = await upsert_telegram_user(session, _tg_dict(message.from_user))
-        await session.commit()
-    lang = user.language
-    await message.answer(
-        t(lang, "welcome", name=html.escape(user.name), role=t(lang, "roles")[user.role]) + "\n\n" + t(lang, "help"),
-        reply_markup=notify.keyboard([notify.webapp_button(t(lang, "open_app"))]),
-        parse_mode="HTML",
-    )
 
 
 @router.message(Command("login"))
@@ -61,22 +48,6 @@ async def toggle_language(message: Message):
         user.language = "ru" if user.language == "uz" else "uz"
         await session.commit()
     await message.answer(t(user.language, "lang_set"))
-
-
-@router.message(Command("inventar", "inventory"))
-async def inventory(message: Message):
-    async with SessionLocal() as session:
-        user = await upsert_telegram_user(session, _tg_dict(message.from_user))
-        await session.commit()
-        if user.role == Role.RESIDENT:
-            return await message.answer(t(user.language, "forbidden"))
-        counts = {"total": 0, "expiring": 0, "slow": 0, "fast": 0, "low_stock": 0, "out_of_stock": 0}
-        for m in (await session.execute(select(IgxMarker))).scalars():
-            counts["total"] += 1
-            for tag in status_tags(m):
-                counts[tag] += 1
-    await message.answer(t(user.language, "inventory", **counts), parse_mode="HTML",
-                         reply_markup=notify.keyboard([notify.webapp_button(t(user.language, "open_app"), "#/inventory")]))
 
 
 @router.callback_query(F.data.startswith("approve:"))
@@ -105,7 +76,7 @@ async def approve(cb: CallbackQuery):
     items = ", ".join(f"{r['name']} ({r['stock_left']})" for r in report)
     await cb.answer("✅")
     await cb.message.edit_text(t(lang, "approved", code=code, by=html.escape(user.name), items=html.escape(items)),
-                               parse_mode="HTML")
+                               parse_mode="HTML", reply_markup=menu.kb(menu.home_row(lang, f"bx:v:{code}")))
     await notify.low_stock_after([r["name"] for r in report])
 
 
@@ -113,9 +84,22 @@ def create_bot() -> tuple[Bot, Dispatcher]:
     bot = Bot(config.BOT_TOKEN, default=DefaultBotProperties(parse_mode="HTML"))
     dp = Dispatcher()
     dp.include_router(router)
+    dp.include_router(menu.router)  # last: it has the catch-all text handler
     return bot, dp
 
 
+COMMANDS = {
+    "uz": [("start", "Bot haqida va yo'riqnoma"), ("menu", "Asosiy menyu"), ("atlas", "Atlasdan qidirish"),
+           ("inventar", "IGX ombor"), ("login", "Brauzer uchun kirish havolasi"), ("til", "Tilni almashtirish"),
+           ("cancel", "Amalni bekor qilish")],
+    "ru": [("start", "О боте и инструкция"), ("menu", "Главное меню"), ("atlas", "Поиск по атласу"),
+           ("inventar", "Склад IGX"), ("login", "Ссылка для входа в браузере"), ("til", "Сменить язык"),
+           ("cancel", "Отменить действие")],
+}
+
+
 async def setup_menu(bot: Bot) -> None:
+    await bot.set_my_commands([BotCommand(command=c, description=d) for c, d in COMMANDS["uz"]])
+    await bot.set_my_commands([BotCommand(command=c, description=d) for c, d in COMMANDS["ru"]], language_code="ru")
     if config.WEBAPP_URL.startswith("https://"):
         await bot.set_chat_menu_button(menu_button=MenuButtonWebApp(text="PathoUz", web_app=WebAppInfo(url=config.WEBAPP_URL)))

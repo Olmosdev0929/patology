@@ -347,14 +347,21 @@ def _question_out(q: QuizQuestion) -> dict:
     return {"id": q.id, "organ": q.organ, "case_text": q.case_text, "options": q.options, "image_id": q.image_id}
 
 
+async def todays_question_ids(session: AsyncSession) -> list[int]:
+    """Today's question ids (shared by the web quiz and the bot)."""
+    ids = (await session.execute(select(QuizQuestion.id).order_by(QuizQuestion.id))).scalars().all()
+    if not ids:
+        return []
+    start = (date.today().toordinal() * DAILY_QUIZ_SIZE) % len(ids)
+    return [ids[(start + i) % len(ids)] for i in range(min(DAILY_QUIZ_SIZE, len(ids)))]
+
+
 @router.get("/quiz/daily")
 async def daily_quiz(user: User = Depends(current_user), session: AsyncSession = Depends(get_session)):
     """Same set for everyone on a given day, rotating through the question bank."""
-    ids = (await session.execute(select(QuizQuestion.id).order_by(QuizQuestion.id))).scalars().all()
-    if not ids:
+    todays = await todays_question_ids(session)
+    if not todays:
         return {"date": date.today().isoformat(), "questions": [], "answered": {}}
-    start = (date.today().toordinal() * DAILY_QUIZ_SIZE) % len(ids)
-    todays = [ids[(start + i) % len(ids)] for i in range(min(DAILY_QUIZ_SIZE, len(ids)))]
     questions = {q.id: q for q in (await session.execute(select(QuizQuestion).where(QuizQuestion.id.in_(todays)))).scalars()}
     answered = {
         a.question_id: {"chosen": a.chosen, "correct": a.is_correct}
