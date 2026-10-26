@@ -24,7 +24,6 @@ COPY backend/ ./
 COPY --from=web /web/dist /app/frontend/dist
 COPY docker-entrypoint.sh /usr/local/bin/
 RUN chmod +x /usr/local/bin/docker-entrypoint.sh
-VOLUME ["/data"]
 EXPOSE 8000
 ENTRYPOINT ["docker-entrypoint.sh"]
 CMD ["sh", "-c", "exec uvicorn app.main:app --host 0.0.0.0 --port ${PORT:-8000} --proxy-headers --forwarded-allow-ips='*'"]
